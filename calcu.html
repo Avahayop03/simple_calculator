@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Simple Calculator by Ayop, Avah</title>
+</head>
+<body>
+
+<div id="background-container">
+    <img src="strawberry.avif" alt="Background image">
+</div>
+<div id="container">
+
+
+    <p id="printHistory"></p>
+    <p id="box" class="box">0</p>
+    <table id="table">
+        <tr>
+            <td><button class="clear" onclick="clearDisplay()">C</button></td>
+            <td><button class="pink" onclick="appendToDisplay('%')">%</button></td>
+            <td><button class="material-icon-button" onclick="backspace()"></button></td>
+            <td><button class="pink" onclick="handleButtonClick('/')">/</button></td>
+        </tr>
+
+        <tr>
+            <td><button onclick="appendToDisplay('7')">7</button></td>
+            <td><button onclick="appendToDisplay('8')">8</button></td>
+            <td><button onclick="appendToDisplay('9')">9</button></td>
+            <td><button class="operator" onclick="handleButtonClick('*')">x</button></td>
+        </tr>
+
+        <tr>
+            <td><button onclick="appendToDisplay('4')">4</button></td>
+            <td><button onclick="appendToDisplay('5')">5</button></td>
+            <td><button onclick="appendToDisplay('6')">6</button></td>
+            <td><button class="operator" onclick="handleButtonClick('-')">-</button></td>
+        </tr>
+
+        <tr>
+            <td><button onclick="appendToDisplay('1')">1</button></td>
+            <td><button onclick="appendToDisplay('2')">2</button></td>
+            <td><button onclick="appendToDisplay('3')">3</button></td>
+            <td><button class="operator" onclick="handleButtonClick('+')">+</button></td>
+        </tr>
+
+        <tr>
+            <td><button onclick="appendToDisplay('00')">00</button></td>
+            <td><button onclick="appendToDisplay('0')">0</button></td>
+            <td><button onclick="appendToDisplay('.')">.</button></td>
+            <td><button class="clear" onclick="calculate()">=</button></td>
+        </tr>
+    </table>
+</div>
+
+
+<footer>By: Avah Denesse E. Ayop</footer>
+
+<script src="function.js"></script>
+
+</body>
+</html>
